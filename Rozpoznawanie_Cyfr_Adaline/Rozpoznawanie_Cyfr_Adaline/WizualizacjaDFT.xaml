@@ -1,0 +1,9 @@
+﻿<Window x:Class="Rozpoznawanie_Cyfr_Adaline.WizualizacjaDFT"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WizualizacjaDFT" Height="470" Width="350">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="420" Margin="10,10,0,0" VerticalAlignment="Top" Width="300" Name="obrazDFT"/>
+
+    </Grid>
+</Window>

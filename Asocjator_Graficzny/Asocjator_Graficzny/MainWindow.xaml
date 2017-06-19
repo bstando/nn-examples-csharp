@@ -1,0 +1,30 @@
+﻿<Window x:Class="Asocjator_Graficzny.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="457.627" Width="786.949" Background="Gray">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="16*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="84"/>
+            <RowDefinition Height="185*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Height="300" Grid.Row="1" VerticalAlignment="Top" Width="300" Name="InImage" MouseLeftButtonDown="InImage_MouseLeftButtonDown" MouseMove="InImage_MouseMove" Margin="0,0,0,-31" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300" Grid.Column="2" Grid.Row="1" Name="outImage"/>
+        <Button Content="Dodaj do bazy przykładów" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="300" Height="84" Name="dodajDoBazy_btn" Click="dodajDoBazy_btn_Click"/>
+        <Button Content="Klasyfikuj" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="300" Height="84" Name="klasyfikuj_btn" Click="klasyfikuj_btn_Click"/>
+        <Separator Grid.Column="1" Width="2" Height="424" />
+        <Label Content="Obraz do rozpoznania" HorizontalAlignment="Left" Height="38" Margin="0,2,0,0" VerticalAlignment="Top" Width="300"/>
+        <Label Grid.ColumnSpan="2" Content="Rozpoznany obraz" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="0,2,0,0" VerticalAlignment="Top" Width="302"/>
+        <Button Content="Wygładź" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="177" Height="84" Name="wyglad_btn" Click="wyglad_btn_Click"/>
+        <Button Content="Następny przykład" Grid.Column="3" HorizontalAlignment="Left" Height="84" Grid.Row="1" VerticalAlignment="Top" Width="177" Name="nastepny_btn" Click="nastepny_btn_Click"/>
+        <Button Content="Poprzedni przykład" Grid.Column="3" HorizontalAlignment="Left" Height="84" Margin="0,84,0,0" Grid.Row="1" VerticalAlignment="Top" Width="177" Name="poprzedni_btn" Click="poprzedni_btn_Click"/>
+        <Button Content="Zaszum" Grid.Column="3" HorizontalAlignment="Left" Height="84" Margin="0,168,0,0" Grid.Row="1" VerticalAlignment="Top" Width="177" Name="zaszum_btn" Click="zaszum_btn_Click"/>
+    </Grid>
+</Window>

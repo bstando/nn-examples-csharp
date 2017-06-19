@@ -1,0 +1,19 @@
+﻿<Window x:Class="Klasyfikacja_Cyfr_Algorytm_Wiezowy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Okno Główne" Height="460" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="420"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="277*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="300" Name="obrazWejsciowy" MouseLeftButtonDown="obrazWejsciowy_MouseLeftButtonDown" MouseRightButtonDown="obrazWejsciowy_MouseRightButtonDown"/>
+        <Button Content="Rozpocznij Nauke" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="0,10,0,0" VerticalAlignment="Top" Width="217" Name="nauczBtn" Click="nauczBtn_Click"/>
+        <Button Content="Rozpoznaj" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="0,93,0,0" VerticalAlignment="Top" Width="217" Name="rozpoznajBtn" Click="rozpoznajBtn_Click"/>
+
+    </Grid>
+</Window>

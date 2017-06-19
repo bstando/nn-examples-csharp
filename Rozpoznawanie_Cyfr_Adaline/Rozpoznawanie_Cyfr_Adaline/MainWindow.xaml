@@ -1,0 +1,19 @@
+﻿<Window x:Class="Rozpoznawanie_Cyfr_Adaline.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Okno główne" Height="470" Width="525" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="217*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="420"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="300" Name="rozpoznawanyObraz" MouseLeftButtonDown="rozpoznawanyObraz_MouseLeftButtonDown" MouseRightButtonDown="rozpoznawanyObraz_MouseRightButtonDown"/>
+        <Button Content="Rozpoznaj" Grid.Column="1" HorizontalAlignment="Left" Height="93" Margin="0,207,0,0" VerticalAlignment="Top" Width="207" Name="rozpoznajBtn" Click="rozpoznajBtn_Click"/>
+        <Button Content="Rozpocznij Naukę" Grid.Column="1" HorizontalAlignment="Left" Margin="0,114,0,0" VerticalAlignment="Top" Width="207" Height="93" Name="uczBtn" Click="uczBtn_Click"/>
+        <Button Content="Pokaż Wykres Błędu" Grid.Column="1" HorizontalAlignment="Left" Height="93" Margin="0,21,0,0" VerticalAlignment="Top" Width="207" Name="pozkazWykres_btn" Click="pozkazWykres_btn_Click"/>
+    </Grid>
+</Window>
